@@ -1,0 +1,25 @@
+.productitem {
+  width: 25%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border: 1px solid #ddd;
+  .image {
+    width: 250px;
+    height: 300px;
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .productitem {
+    width: 100%;
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

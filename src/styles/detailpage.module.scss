@@ -1,0 +1,19 @@
+.detail {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  .left {
+    background-color: #cc0000;
+  }
+  .right {
+    background-color: #f80;
+  }
+}
+@media (max-width: 767px) {
+  .detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+}
